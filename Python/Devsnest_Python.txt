@@ -1,0 +1,115 @@
+Hakerrank Password -> HackerRank12
+#burger - 170 , coke - 50, age < 9 : 20% & age > 59 :30
+b = True
+c = False
+age = 88
+cost = 0
+if b:
+    cost+=170
+if c:
+    cost+=50
+if(age<9):
+    cost = cost*0.8
+elif(age>59):
+    cost = cost*0.7
+print("pay",cost,"rupees")
+
+
+
+a = True
+b = True
+print(a and b)
+print(a or b)
+print(not a) # not - true ko false krega and false ko true
+print(not (a and b))
+print(not (a or b))
+
+
+
+# --->LOOPS<---
+# -->while loop<--
+x = 5
+while x>0:
+    print(x)
+    x-=1
+print("that is all folks")
+
+
+l=[1,4,44,1111,708]
+sum = 0
+i=0
+while i<len(l):
+    sum += l[i]
+    i+=1
+print(sum)
+
+
+#-->for Loop<--
+l=[1,2,3,[1,2,3]]
+for x in l:
+    print(x, id(x))
+print(id(l[-1]))
+
+
+l=[1,4,44,1111,708]
+sum = 0
+for x in l:
+    sum += x
+print(sum)
+
+# --or--
+
+l=[1,4,44,1111,708]
+print(sum(l))
+
+
+for i in range(4,10,3):
+    print(i)
+
+
+
+# <---function<---
+
+def f():
+    print(1)
+    print(2)
+    print(3)
+    
+f()
+print(4)
+f()
+print(5)
+f()
+f()
+print(7)
+print(8)
+print(9)
+
+
+
+def fun(a,b):
+    print(a,b)
+    if a%2==1: #odd 
+        return b
+    else:
+        return b**2
+x = fun(2,3)
+y = fun(3,3)
+print(x,y)
+O/P- 2 3
+     3 3
+     9 3
+
+
+print(1,2,3,4,end=" ")
+print(5,6)O?P-> 1,2,3,4,5,6
+
+
+st = "aaaeeeiiiiioooouuu"
+s = {"a","e","i","o","u"}
+a =True
+for x in st:
+    if x not in s:
+        a = False
+        break
+print(a)

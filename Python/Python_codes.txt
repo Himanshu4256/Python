@@ -1,0 +1,234 @@
+#def add():
+#    name="Himanshu"
+#    print("welcome Mr.",name)
+#add()
+#add()
+
+#First_name= "Himanshu"
+#Last_name= "Sharma"
+#age= 20
+#mind = "genius"
+#print(First_name)
+#print(Last_name)
+#print(age,"year old")
+#print("Tony is ",mind)
+
+#name = input("what is your name ?")
+#print("Your name is ",name)
+#print("Hello" + name)
+
+#(2) Tony is a superhero. Ask Him for his super heroname & show it on the terminal.
+
+#name = input("what is your superhero name")
+#a = name
+#print(a)
+
+#<--type conversion in python-->
+#(A)
+#old_age = input("Enter your old age")
+#new_age = int(old_age) + 2
+#print(new_age)
+
+#(B)
+#number = 18
+#print(float(number))
+
+#sum of two numbers
+#(A)
+#first_number = 66
+#second_number = 53
+#total = first_number + second_number
+#print(total)
+
+#(B)
+#first_number = input("enter first number")
+#second_number = input("enter second number")
+#c = int(first_number)+int(second_number)
+#print(c) or
+#print("the sum is" + str(c))
+
+# <--STRING-->
+name="Himanshu"
+print(name.upper())
+
+name="HIMANSHU SHARMA"
+print(name.lower())
+
+name="HIMANSHU SHaRMA"
+print(name.find("a"))
+print(name.find("z"))
+
+name="HIMANSHU SHaRMA"
+print(name.replace("HIMANSHU", "DUSHAYANT"))
+print('H' in name)
+
+#<--OPERATORS-->
+print(52000*2)
+print(52000/2)
+print(5%2)
+print(5**2) #power
+
+i=5
+i=i+5 #not valid see below
+i+=3
+print(i)
+
+#<-- OPERATOR PRECEDENCE -->
+result = 2+3*5 # bcoz * ki priority high h to wo phle solve hoga 
+print(result)
+
+
+
+
+#CALCULATION
+print(3>=2)
+print(8==9)
+print(8!=8) #ye alws oposite output deta hai.
+
+#<--OPERATORS-->
+print(2>3 or 2>1) #agr dono m se ek bhi true hai to output true aaega.
+print(2<3 and 2>1) # In this both conditions should bhi true then o/p will be true.
+print(not 2>3) # ye true ko false and false ko true krega.
+
+
+#<-- If-else Statement -->
+age=16
+if age>18:
+    print("You can vote")
+    print("Bcoz you are adult")
+elif age<18 and age>3:
+    print("you are a in schhol")
+else:
+    print("you are a child")
+print("Thanks")
+
+#CALC WITH PYTHON 
+
+first_number= input("enter first number")
+operator = input("enter operator (+,-,*,/,%)")
+second_number= input("enter second number")
+
+first_number = int(first_number)
+second_number = int(second_number)
+if operator == "+":
+    print(first_number+second_number)
+elif operator == "-":
+    print(first_number-second_number)
+elif operator == "*":
+    print(first_number*second_number)
+elif operator == "/":
+    print(first_number/second_number)
+elif operator == "%":
+    print(first_number%second_number)
+else:
+    print("Invalid string")
+    
+    
+    
+
+            #CALC WITH PYTHON 
+
+first_number= input("enter first number")
+operator = input("enter operator (+,-,*,/,%)")
+second_number= input("enter second number")
+
+first_number = int(first_number)
+second_number = int(second_number)
+if operator == "+":
+    print(first_number+second_number)
+elif operator == "-":
+    print(first_number-second_number)
+elif operator == "*":
+    print(first_number*second_number)
+elif operator == "/":
+    print(first_number/second_number)
+elif operator == "%":
+    print(first_number%second_number)
+else:
+    print("Invalid string")
+
+
+
+
+num = range(5)
+print(num)
+
+
+
+
+#while loop 
+#i = 1
+#while (i<=5):
+#    print(i)
+#    i=i+1 # ese remove krke infinite lopp bnega
+    
+    
+#i=1
+#while (i<5):
+#    print(i * "*") #work like concatination
+#    i=i+1
+
+i=5
+while (i>=1):
+    print(i * "*") #work like concatination
+    i=i-1
+    
+#<--for loop-->    
+for i in range(5):
+    print(i)
+    
+    #<--list-->
+marks = [95,97,98]
+print(marks[1])
+print(marks[-1]) #count from the end
+print(marks[0:2])
+
+marks = [95,97,98]
+marks.insert (0,100)
+for score in marks:
+    print(score)
+    
+    
+marks.clear()
+print marks
+
+#<--TUPLE-->
+marks = (95, 98, 97, 97)#marks[0] = 98print(marks.count(97))print(marks.index(97))
+
+#<--sets-->
+
+marks = {98, 97, 95, 95}print(marks)for score in marks:print(score)
+
+
+#<--Dictionary-->
+marks = {"math" : 99, "chemistry" : 98, "physics" : 97}print(marks)print(marks["chemistry"])marks["english"] = 95print(marks)marks["math"] = 96print(marks)
+
+
+
+#<--Functions-->
+#1. In-Build Function
+#2. Module Functions
+#3. User-Defined Function
+
+
+
+#2. Module Functions
+import math
+print(dir(math))
+
+
+from math import sqrt
+print(sqrt(8))
+
+
+from math import *
+print(sqrt(8))
+
+
+#3. User-Defined Function
+def sum (first, second,):
+    print(first + second)
+sum(33,44)
+    
+    
+    
